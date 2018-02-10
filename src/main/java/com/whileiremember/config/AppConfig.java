@@ -70,7 +70,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 	@Bean
 	public LocalEntityManagerFactoryBean entityManagerFactory() {
 		LocalEntityManagerFactoryBean emfb = new LocalEntityManagerFactoryBean();
-		emfb.setPersistenceUnitName("pollapp");
+		emfb.setPersistenceUnitName("whileiremember");
 		String dbUrl = System.getenv("JDBC_DATABASE_URL");
 		if(dbUrl!=null) {
 			Properties jpaProperties = new Properties();
