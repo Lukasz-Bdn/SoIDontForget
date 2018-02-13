@@ -1,8 +1,14 @@
 package com.whileiremember.test;
 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
 public class SendgridApiKeyTest {
-//	public static void main(String[] args) {
-//		String apiKey = System.getenv("SENDGRID_API_KEY");
-//		System.out.println(apiKey);
-//	}
+
+	@Test
+	public void test() {
+		String apiKey = System.getenv("SENDGRID_API_KEY");
+		assertTrue(apiKey.length() == 69);
+	}
 }
